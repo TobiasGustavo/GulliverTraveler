@@ -1,35 +1,35 @@
 package br.com.gullivertraveler;
 
 public class Bedroom {
-    private String roomType;
-    private int maxOccupancy;
+    private String typeOfRoom;
+    private int maximumOccupation;
     private int floor;
 
     public Bedroom() {
         super();
     }
 
-    public Bedroom(String roomType, int maxOccupancy, int floor) {
+    public Bedroom(String typeOfRoom, int maximumOccupation, int floor) {
         super();
-        this.roomType = roomType;
-        this.maxOccupancy = maxOccupancy;
+        this.typeOfRoom = typeOfRoom;
+        this.maximumOccupation = maximumOccupation;
         this.floor = floor;
     }
 
-    public String getRoomType() {
-        return roomType;
+    public String getTypeOfRoom() {
+        return typeOfRoom;
     }
 
-    public void setRoomType(String roomType) {
-        this.roomType = roomType;
+    public void setTypeOfRoom(String typeOfRoom) {
+        this.typeOfRoom = typeOfRoom;
     }
 
-    public int getMaxOccupancy() {
-        return maxOccupancy;
+    public int getMaximumOccupation() {
+        return maximumOccupation;
     }
 
-    public void setMaxOccupancy(int maxOccupancy) {
-        this.maxOccupancy = maxOccupancy;
+    public void setMaximumOccupation(int maximumOccupation) {
+        this.maximumOccupation = maximumOccupation;
     }
 
     public int getFloor() {
@@ -39,5 +39,4 @@ public class Bedroom {
     public void setFloor(int floor) {
         this.floor = floor;
     }
-
 }
