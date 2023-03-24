@@ -1,7 +1,7 @@
 package br.com.gullivertraveler;
 
 public class Client {
-    private int cpf;
+    private String cpf;
     private String name;
     private String gender;
     private String address;
@@ -10,7 +10,7 @@ public class Client {
     public Client() {
         super();
     }
-    public Client(int cpf, String name, String gender, String address, String email) {
+    public Client(String cpf, String name, String gender, String address, String email) {
         super();
         this.cpf =  cpf;
         this.gender = gender;
@@ -18,11 +18,11 @@ public class Client {
         this.email = email;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 

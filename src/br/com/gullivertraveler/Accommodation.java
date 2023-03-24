@@ -1,24 +1,28 @@
 package br.com.gullivertraveler;
 
 public class Accommodation {
-    private String guest;
+    private Guest guest;
     private String email;
-
-    public Accommodation () {
+    private String address;
+    private String phone;
+ 
+    public Accommodation() {
         super();
     }
 
-    public Accommodation(String guest, String email) {
+    public Accommodation(Guest guest, String email, String address, String phone) {
         super();
         this.guest = guest;
         this.email = email;
+        this.address = address;
+        this.phone = phone;
     }
 
-    public String getGuest() {
+    public Guest getGuest() {
         return guest;
     }
 
-    public void setGuest(String guest) {
+    public void setGuest(Guest guest) {
         this.guest = guest;
     }
 
@@ -29,4 +33,21 @@ public class Accommodation {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
 }

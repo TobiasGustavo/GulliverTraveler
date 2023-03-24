@@ -1,6 +1,6 @@
 package br.com.gullivertraveler;
 
-public class Service {
+public class Service extends Accommodation {
     private String kindOfService;
     private int amount;
 
@@ -28,4 +28,5 @@ public class Service {
     public void setAmount(int amount) {
         this.amount = amount;
     }
+
 }

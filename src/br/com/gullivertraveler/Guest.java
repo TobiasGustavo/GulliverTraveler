@@ -1,23 +1,28 @@
 package br.com.gullivertraveler;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 
 public class Guest {
 
     private int registrationNumber;
-    private LocalDate dataRecord;
-    private LocalTime timeStay;
+    private LocalDateTime dataRecord;
+    private int timeStay;
+    private LocalDateTime checkIn;
+    private LocalDateTime checkOut;
 
     public Guest() {
         super();
     }
-    public Guest(int registrationNumber, LocalDate dataRecord, LocalTime timeStay) {
+    
+    public Guest(int registrationNumber, LocalDateTime dataRecord, int timeStay, LocalDateTime checkIn, LocalDateTime checkOut) {
         super();
         this.registrationNumber = registrationNumber;
         this.dataRecord = dataRecord;
         this.timeStay = timeStay;
+        this.checkIn = checkIn;
+        this.checkOut = checkOut;
     }
+    
     public int getRegistrationNumber() {
         return registrationNumber;
     }
@@ -26,21 +31,35 @@ public class Guest {
         this.registrationNumber = registrationNumber;
     }
 
-    public LocalDate getDataRecord() {
+    public LocalDateTime getDataRecord() {
         return dataRecord;
     }
 
-    public void setDataRecord(LocalDate dataRecord) {
+    public void setDataRecord(LocalDateTime dataRecord) {
         this.dataRecord = dataRecord;
     }
 
-    public LocalTime getTimeStay() {
+    public int getTimeStay() {
         return timeStay;
     }
 
-    public void setTimeStay(LocalTime timeStay) {
+    public void setTimeStay(int timeStay) {
         this.timeStay = timeStay;
     }
+    
+    public LocalDateTime getCheckIn() {
+        return checkIn;
+    }
 
+    public void setCheckIn(LocalDateTime checkIn) {
+        this.checkIn = checkIn;
+    }
 
+    public LocalDateTime getCheckOut() {
+        return checkOut;
+    }
+
+    public void setCheckOut(LocalDateTime checkOut) {
+        this.checkOut = checkOut;
+    }
 }

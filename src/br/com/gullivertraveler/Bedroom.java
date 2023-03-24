@@ -1,9 +1,10 @@
 package br.com.gullivertraveler;
 
-public class Bedroom {
+public class Bedroom extends Accommodation {
     private String typeOfRoom;
     private int maximumOccupation;
     private int floor;
+
 
     public Bedroom() {
         super();
